@@ -1,0 +1,18 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home Page</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/home.css' %}">
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to the Online Book System</h1>
+        <p>Explore our vast collection of books and enjoy a seamless reading experience.</p>
+        <div class="link">
+            <a href="{% url 'book_list' %}">Click here</a> to view the book list.
+        </div>
+    </div>
+</body>
+</html>
